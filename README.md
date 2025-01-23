@@ -83,10 +83,10 @@ public class Main {
   }
 }
 ```
-### Monotonic Stack
+## Monotonic Stack
 In Data Structures and Algorithms (DSA), a sequence or array is called monotonic if it is either entirely non-increasing or non-decreasing. This means that the elements of the sequence either never increase or never decrease as you traverse the sequence.
 
-#### Types of Monotonic Arrays
+### Types of Monotonic Arrays
 #### 1. Monotonic Increasing:
 The elements either strictly increase or stay the same.
 Example: [1, 2, 2, 3, 4] (non-decreasing).
