@@ -85,8 +85,74 @@ public class Main {
 ```
 ## Stack implementation with array
 ```
-
-
+import java.util.*;
+public class Main {
+  public static class Stack{
+    int[] arr = new int[5];
+    int idx = 0;
+    
+   void push(int n){
+     if(isFull()){
+       System.out.println("Stack is Full ");
+       return;
+     }
+    arr[idx]= n;
+    idx++;
+  }
+  int peek(){
+    if(idx==0){
+      System.out.println("Stack is empty");
+      return -1;
+    }
+    return arr[idx-1];
+    
+  }
+   int pull(){
+     if(idx==0){
+      System.out.println("Stack is empty");
+      return -1;
+    }
+    int top = arr[idx-1];
+      arr[idx-1] = 0;
+      idx--;
+      return arr[idx];
+     
+   }
+   
+   void display(){
+     for(int i=0; i<idx; i++){
+       System.out.println(arr[i]+ " ");
+     }
+     System.out.println();
+   }
+   
+   int size(){
+     return idx;
+   }
+   
+   Boolean isEmpty(){
+     if(idx == 0) return true;
+     else return false;
+   }
+   
+   Boolean isFull(){
+     if(idx == arr.length) return true;
+     else return false;
+   }
+    
+  }
+  
+    public static void main(String[] args) {
+      Stack st = new Stack();
+      st.push(1);
+      st.push(2);
+      st.push(3);
+      st.push(4);      
+      st.push(4);
+      st.push(4);
+      st.display();
+  }
+}
 ```
 ## Stack implementation with Linkedlist
 
