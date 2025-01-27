@@ -238,15 +238,35 @@ public class Main {
 #### 1. Balance Paranthesis
    RULES:
    1. opening push in stack
-   2. Closing : top = ')' pop
-                if stack is empty, return false
+   2. Closing : top = ')' pop, if stack is empty, return false
 ```
+import java.util.*;
 
+public class Main {
+  public static Boolean balancePara(String str)
+  {
+    Stack<Character> st = new Stack<>();
+    int n= str.length();
+    for(int i=0; i<n; i++){
+      char ch = str.charAt(i);
+      if(ch == '('){
+        st.push(ch);
+      } else{
+        if(st.size() == 0) return false;
+        if(st.peek() == '(') st.pop();
+      }
+    }
+    if(st.size() > 0) return false;
+    else return true;
+  }
+    public static void main(String[] args) {
+        String str = "(())";
+        // balancePara(str);
+        System.out.println(balancePara(str));
+    }
+}
 ```
-
-   
-   
-
+#### 2. 
 --- 
 ## Monotonic Stack
 In Data Structures and Algorithms (DSA), a sequence or array is called monotonic if it is either entirely non-increasing or non-decreasing. This means that the elements of the sequence either never increase or never decrease as you traverse the sequence.
