@@ -155,8 +155,83 @@ public class Main {
 }
 ```
 ## Stack implementation with Linkedlist
+```
+import java.util.*;
 
+public class Main {
+  public static class Node{  //user define data type
+    int val;
+    Node next;
+    Node(int val){
+      this.val = val;
+      this.next = null;
+    }
+  }
+  public static class Stack{ // user define data structure
+    int size = 0;
+    Node head = null;
+    
+    void push(int x){
+      Node newNode = new Node(x);
+      newNode.next = head;
+      head = newNode;
+      size++;
+      
+    }
+    
+    void display(){
+      Node temp = head;
+      while(temp!= null){
+        System.out.print(temp.val+" ");
+        temp = temp.next;
+      }
+      System.out.println();
+    }
+    
+    int pull(){
+      if(head == null){
+        System.out.println("LL is empty");
+        return -1;
+      }
+      int x = head.val;
+      head = head.next;
+      size--;
+      return x;
+    }
+    
+    int peek(){
+       if(head == null){
+          System.out.println("LL is empty");
+          return -1;
+        }
+        return head.val;
+    }
+    
+    int size(){
+      return size;
+    }
+    
+    boolean isEmpty(){
+      if(size == 0) return true;
+      else retun flase;
+    }
+    
+  }
 
+  
+    public static void main(String[] args) {
+      Stack st = new Stack();
+      st.push(1);
+      st.push(2);
+      st.push(3);
+      st.push(4);      
+      st.display();
+      System.out.println("peek element is: "+st.peek());
+      st.pull();
+      st.display();
+  }
+}
+```
 
 ## Monotonic Stack
 In Data Structures and Algorithms (DSA), a sequence or array is called monotonic if it is either entirely non-increasing or non-decreasing. This means that the elements of the sequence either never increase or never decrease as you traverse the sequence.
