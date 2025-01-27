@@ -232,8 +232,20 @@ public class Main {
   }
 }
 ```
-
+---
 ## Stack Interview Question:
+
+#### 1. Balance Paranthesis
+   RULES:
+   1. opening push in stack
+   2. Closing : top = ')' pop
+                if stack is empty, return false
+```
+
+```
+
+   
+   
 
 --- 
 ## Monotonic Stack
