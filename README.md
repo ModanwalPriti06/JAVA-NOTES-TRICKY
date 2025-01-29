@@ -287,6 +287,29 @@ Strictly decreasing example: [5, 4, 3, 2].
 - find array length n
 - m = n * (n+1) /2;
 - get all sum of array element and - m;
+```
+var missingNumber = function (nums) {
+    let n = nums.length;
+    let sum = (n * (n + 1)) / 2
+    let res = nums.reduce((acc, curr) => {
+        return acc + curr;
+    }, 0)
+    return sum-res;
+};
+```
+## Fibonacci series: The Fibonacci series is a sequence of numbers where each number is the sum of the two preceding ones, starting from 0 and 1. The sequence goes:
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+```
+function fibonacci(n){
+  let a= 0, b = 1;
+ for (let i = 0; i < n; i++) {
+        console.log(a);
+        [a, b] = [b, a + b];
+    }
+}
+fibonacci(10);
+```
+
 
 
 
