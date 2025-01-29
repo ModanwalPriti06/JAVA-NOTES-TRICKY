@@ -282,6 +282,13 @@ The elements either strictly decrease or stay the same.
 Example: [5, 4, 4, 2, 1] (non-increasing).
 Strictly decreasing example: [5, 4, 3, 2].
 
+## Missing number
+
+- find array length n
+- m = n * (n+1) /2;
+- get all sum of array element and - m;
+
+
 
 
 
