@@ -266,7 +266,12 @@ public class Main {
     }
 }
 ```
-#### 2. 
+#### 2. Remove consecutive subsequence 
+(where element length > 1 we have remove)
+```
+
+```
+
 --- 
 ## Monotonic Stack
 In Data Structures and Algorithms (DSA), a sequence or array is called monotonic if it is either entirely non-increasing or non-decreasing. This means that the elements of the sequence either never increase or never decrease as you traverse the sequence.
