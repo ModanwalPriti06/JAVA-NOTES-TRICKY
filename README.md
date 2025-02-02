@@ -315,6 +315,14 @@ function fibonacci(n){
 fibonacci(10);
 ```
 
+# Masai Webinar
+
+- Binary search occurance of any number first and last indix
+- https://www.spoj.com/problems/EKO/ eko-eko
+- 
+
+
+
 
 
 
