@@ -1,6 +1,14 @@
 
 ##  Arrays, Searching & Sorting, Collection, Stack, Queue, Linklist, Hashmap, Tree, Graph, Recursion, DP
 
+
+| **Leetcode No.**             | **Use Case**                      |
+|-------------------------|----------------------------------|
+| **12**      | Maximum sum of k elements       |
+| **132**        | Find sum pair in sorted array   |
+| **131**             | First repeating element         |
+
+
 ### Rotate Array Trick
 k = k%n
 here k = how many times have to rotate and n = length of array
@@ -314,6 +322,15 @@ function fibonacci(n){
 }
 fibonacci(10);
 ```
+## find unique element with the help of xor operator
+function findUnique(arr) {
+    let result = 0;
+    for (let num of arr) result ^= num; // XOR cancels out duplicates
+    return result;
+}
+
+console.log(findUnique([1, 2, 3, 2, 1])); // Output: 3
+
 
 # Masai Webinar
 
