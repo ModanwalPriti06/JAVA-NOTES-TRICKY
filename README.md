@@ -4,9 +4,8 @@
 
 | **Leetcode No.**             | **Use Case**                      |
 |-------------------------|----------------------------------|
-| **12**      | Maximum sum of k elements       |
-| **132**        | Find sum pair in sorted array   |
-| **131**             | First repeating element         |
+| **268**      |  Missing Number  |
+
 
 
 ### Rotate Array Trick
