@@ -319,7 +319,9 @@ fibonacci(10);
 
 - Binary search occurance of any number first and last indix
 - https://www.spoj.com/problems/EKO/ eko-eko
-- 
+- Predicate Function in DSA (Data Structures and Algorithms)
+A predicate function is a function that returns a boolean value (true or false) based on a given condition. It is commonly used in searching, filtering, and conditional operations in DSA.
+
 
 
 
