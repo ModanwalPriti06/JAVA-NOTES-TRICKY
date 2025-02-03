@@ -297,7 +297,7 @@ public class Main {
     return res;
   }
     public static void main(String[] args) {
-      int[] arr = {1,2,2,3,4,4,4,5,6,6,7,7,10,10,10};
+      int[] arr = {1,2,2,3,4,4,4,5,6,6,7,7,10,10,10,2};
       int[] res = removeConsecutive(arr, arr.length);
       System.out.println(Arrays.toString(res));
   }
