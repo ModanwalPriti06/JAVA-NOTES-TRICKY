@@ -5,7 +5,7 @@
 | **Leetcode No.**             | **Use Case**                      |
 |-------------------------|----------------------------------|
 | **268**      |  Missing Number  |
-| **273**      | Partition Array According to Given Pivot | 
+| **2161**      | Partition Array According to Given Pivot | 
 
 
 
