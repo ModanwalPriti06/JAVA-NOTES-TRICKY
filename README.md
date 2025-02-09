@@ -305,6 +305,7 @@ public class Main {
 }
 ```
 
+### 3. Next Grater Element
 --- 
 ## Monotonic Stack
 In Data Structures and Algorithms (DSA), a sequence or array is called monotonic if it is either entirely non-increasing or non-decreasing. This means that the elements of the sequence either never increase or never decrease as you traverse the sequence.
@@ -364,6 +365,8 @@ console.log(findUnique([1, 2, 3, 2, 1])); // Output: 3
 - Predicate Function in DSA (Data Structures and Algorithms)
 A predicate function is a function that returns a boolean value (true or false) based on a given condition. It is commonly used in searching, filtering, and conditional operations in DSA.
 
+## Collection and Framework:
+Framework; A set of classses and interface.
 
 
 
