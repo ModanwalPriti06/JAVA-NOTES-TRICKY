@@ -6,6 +6,7 @@
 | **268**      |  Missing Number  |
 | **2161**      | Partition Array According to Given Pivot | 
 | **1337**  | Get to know store data in increasing order based on index number from array |
+| **3280** | Convert Number into Binary |
 
 
 
@@ -366,7 +367,22 @@ console.log(findUnique([1, 2, 3, 2, 1])); // Output: 3
 A predicate function is a function that returns a boolean value (true or false) based on a given condition. It is commonly used in searching, filtering, and conditional operations in DSA.
 
 ## Collection and Framework:
-Framework; A set of classses and interface.
+- Framework; A set of classses and interface.
+- https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html
+
+### Set Interface: (Hashset)
+- it is implemented of set Interface function.
+- Unique
+- unordered
+- hashing Internally
+
+### Map Interface: (Hashmap)
+- Store data in key value pair mapping
+- Method: put(), get(), containsKey(), containsValue(), putIfAbsent(), keySet, entrySet(), values()
+- unordered
+- 
+
+
 
 
 
