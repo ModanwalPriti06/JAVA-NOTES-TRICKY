@@ -7,6 +7,7 @@
 | **2161**      | Partition Array According to Given Pivot | 
 | **1337**  | Get to know store data in increasing order based on index number from array |
 | **3280** | Convert Number into Binary |
+| **345** |  swapping using two pointer | 
 
 
 
