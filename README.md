@@ -7,7 +7,10 @@
 | **2161**      | Partition Array According to Given Pivot | 
 | **1337**  | Get to know store data in increasing order based on index number from array |
 | **3280** | Convert Number into Binary |
-| **345** |  swapping using two pointer | 
+| **345** |  swapping using two pointer |  
+| **2679** | Sum in Matrix | 
+| **2906** | Multiplication of Matrix | 
+
 
 
 
@@ -381,7 +384,62 @@ A predicate function is a function that returns a boolean value (true or false) 
 - Store data in key value pair mapping
 - Method: put(), get(), containsKey(), containsValue(), putIfAbsent(), keySet, entrySet(), values()
 - unordered
-- 
+
+# Matrix 2D Array:
+
+## Why multidimensional?
+- Graph represent - 2D architecture
+- Grid
+- Google Sheet format Data
+
+## Addition Matrix
+Note: r1 == r2 , c1 == c2
+
+## Multiplication in matrix
+Note: r2 == c1 and resultant matrix is [r1 * c2]
+
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+     int[][] arr1 = {
+                       {1,2,3,4},
+                       {5,6,7,8},
+                    };
+      int r1 = 2;
+      int c1 = 4;
+     
+      int[][] arr2 = {
+                       {1,2,3},
+                       {4,5,6},
+                       {7,8,9},
+                       {2,3,5}
+                     };
+      int r2 = 4;
+      int c2 = 3;
+                     
+    // Here multiple will be of this arr only when c1 == r2
+    //  result array is length: int[][] res = new int[r1][c2]
+    
+    int[][] res = new int[r1][c2];
+    
+    for(int i=0; i<r1; i++){
+      for(int j=0; j<c2 ;j++){
+        for(int k=0; k< c1; k++){
+          
+          res[i][j] += (arr1[i][k] + arr2[k][j]);
+          
+        }
+      }
+    }
+     
+     System.out.println(Arrays.deepToString(res));
+     
+  }
+}
+```
+
 
 
 
