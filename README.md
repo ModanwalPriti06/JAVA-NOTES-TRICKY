@@ -1,4 +1,5 @@
 ##  Arrays, Searching & Sorting, Collection, Stack, Queue, Linklist, Hashmap, Tree, Graph, Recursion, DP
+- Jagged Array - in which array where number of column is not fix.
 
 
 | **Leetcode No.**             | **Use Case**                      |
@@ -438,6 +439,11 @@ public class Main {
      
   }
 }
+```
+
+## Transpose of Matrix
+```
+
 ```
 
 
