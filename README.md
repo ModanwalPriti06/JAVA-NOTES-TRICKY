@@ -485,7 +485,7 @@ public class Main {
                       };
       
       for(int i=0; i<c1; i++){
-        for(int j=0; j<r1; j++){
+        for(int j=i; j<r1; j++){
            int temp =   arr1[i][j];
             arr1[i][j] = arr1[j][i];
              arr1[j][i] = temp;
