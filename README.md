@@ -495,6 +495,51 @@ public class Main {
   }
 }
 ```
+## Given a square Matrix turn into 90Degree in a clock wise direction
+- Solution1 : Transpose Matrix
+- Solution2 : Reverse String
+```
+import java.util.*;
+
+public class Main {
+  public static void reverseArray(int[] arr ){
+    int i = 0;
+    int j = arr.length-1;
+    
+    while(i<j){
+      int temp = arr[i];
+      arr[i]= arr[j];
+      arr[j] = temp;
+      i++;
+      j--;
+      
+    }
+  }
+  
+    public static void main(String[] args) {
+      int r1 = 3;
+      int c1 = 3;
+       int[][] arr1 = {
+                         {1,2,3},
+                         {4,5,6},
+                         {7,8,9}
+                      };
+      
+      // Transpose Matrix
+      for(int i=0; i<c1; i++){
+        for(int j=i; j<r1; j++){
+           int temp =   arr1[i][j];
+            arr1[i][j] = arr1[j][i];
+             arr1[j][i] = temp;
+        }
+      }
+       for(int i=0; i<c1; i++){
+            reverseArray(arr1[i]);
+        } 
+     System.out.println(Arrays.deepToString(arr1));
+  }
+}
+```
 
 
 
