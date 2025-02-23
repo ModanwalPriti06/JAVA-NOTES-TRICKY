@@ -541,6 +541,22 @@ public class Main {
 }
 ```
 
+## Pascal element (Jagged Array)
+| 1 |          
+| 1 | 1 |
+| 1 | 2| | 1 |
+| 1 | 3 | 3 | 1 |
+| 1 | 4 | 6 | 4 | 1 | 
+
+- property:
+- p[i][j] = p[i-1][j] + p[i-1][j-1] (means mid element should me some of above row left and right element some)
+- In every row first and last element should be one 1.
+- 
+```
+
+```
+
+
 
 
 
