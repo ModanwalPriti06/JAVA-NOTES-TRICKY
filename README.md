@@ -11,7 +11,7 @@
 | **345** |  swapping using two pointer |  
 | **2679** | Sum in Matrix | 
 | **2906** | Multiplication of Matrix | 
-
+| **867** | Transpose Matrix | 
 
 
 
