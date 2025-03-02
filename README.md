@@ -12,7 +12,8 @@
 | **2679** | Sum in Matrix | 
 | **2906** | Multiplication of Matrix | 
 | **867** | Transpose Matrix | 
-| **643** | Sliding window | 
+| **643 / 1343** | Sliding window | 
+
 
 
 
