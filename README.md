@@ -595,18 +595,84 @@ public class Main {
 2. It has no loop or no circuit
 3. It has no self loop
 
-```
-### Binary Trees
-- A binary tree is a hierarchical data structure in which each node has at most two children:
-1. Left child
-2. Right child
+## Type of Tree
+- Generic tree - Each node can have any number of nodes.
+- Binary Tree - Each node can have atmost (jyada se jyada) child node, which are known as left child node and riht child node.
+
+# Binary Trees
+ - Each node can have atmost (jyada se jyada) child node, which are known as left child node and riht child node.
+ - Every node to the left of a mod is smaller and every node to the right has a greater value.
+
+## Application of tree data structure
+1. Hierarchical data structure.
+2. searching efficiency
+3. Sorting (Heap, DFS)
+4. Dynamic data
+5. Effcient Insertion and Deletion
+6. Easy to Implement
 
 ### Each node in a binary tree contains:
 - A value (data)
 - A pointer/reference to its left child
 - A pointer/reference to its right child
+
+## Implementation of Binary Tree
+(Preorder left to right one to one step - RootLeftRight)
+```
+import java.util.*;
+
+public class Main {
+  public static class Node {
+    int val;  // 0
+    Node left;  //null
+    Node right;  // null
+    
+    public Node(int val){
+      this.val = val;
+    }
+    
+  }
+    public static void display(Node root){
+      if(root == null) return;
+         System.out.print(root.val + " -> ");
+     if(root.left != null)
+         System.out.print(root.left.val + "  ");
+     if(root.right != null)
+      System.out.print(root.right.val);
+      System.out.println();
+      display(root.left);
+      display(root.right);
+    }
+    public static void main(String[] args) {
+      Node root = new Node(1);
+      Node a = new Node(2);
+      Node b = new Node(3);      
+      Node c = new Node(4);
+      Node d = new Node(5);      
+      Node e = new Node(6);
+      
+      root.left = a;
+      root.right = b;
+      
+      a.left = c;
+      a.right = d;
+      
+      b.right =  e;
+      display(root);
+  
+    }
+}
 ```
 
+```
+        1
+       / \
+      2   3
+     / \   \
+    4   5   6
+1 → 2 → 4 → 5 → 3 → 6
+
+```
 
 
 
