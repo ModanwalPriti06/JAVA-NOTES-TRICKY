@@ -576,6 +576,10 @@ public class Main {
 - Hierarchical data structure
 - Terminology: Root node, Parent Node, Child Node, Sibling Node
 - Every Node have one or two node.
+- Leaf Node - which node have not any child.
+- Internal Node - Not Leaf Not Root (which have child and have parent also)
+- Ancester Node - parent -> parent of parent -> parent of parent of parent ->  .....
+- Descendant - Excluding root node all node should be count.
 - **Note: One child can't have 2 parent**
 
 ## Binary Trees
