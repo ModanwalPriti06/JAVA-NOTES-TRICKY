@@ -583,7 +583,7 @@ public class Main {
 - Level - no. of row
 - Number of edges - number of line connected to one node to another node. ( Edge = size - 1 )
 - Size: Number of nodes.
-- Height: Based on row and coulmn
+- Height: Based on row and coulmn (consider edges wise mostly)
 - **Note: One child can't have 2 parent**
 
 ### Sub Tree
@@ -754,6 +754,15 @@ public static int preorder(Node root){
       
       return Math.max(a, Math.max(b,c));
  }
+```
+
+## Find Height of the Tree 
+```
+public static int height(Node root){
+      if(root == null) return 0;
+      if(root.left == null && root.right == null) return 0;    // handling leaf node 
+      return 1 + Math.max(height(root.left), height(root.right));
+    }
 ```
 
 
