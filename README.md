@@ -735,7 +735,13 @@ public static int preorder(Node root){
       preorder(root.right);
     }
 ```
-
+## recusrion Find the sum of tree node
+```
+ public static int preorder(Node root){
+      if(root == null) return;
+       return preorder( root) + preorder( root.left) + preorder(root.right);
+    }
+```
 
 
 
