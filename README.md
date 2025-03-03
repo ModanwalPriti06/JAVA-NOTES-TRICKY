@@ -737,11 +737,25 @@ public static int preorder(Node root){
 ```
 ## recusrion Find the sum of tree node
 ```
- public static int preorder(Node root){
-      if(root == null) return;
-       return preorder( root) + preorder( root.left) + preorder(root.right);
-    }
+public static int preorder(Node root){
+      if(root == null) return 0;
+      return root.val + preorder(root.left) + preorder(root.right);
+}
 ```
+
+## Find Node to the max value
+```
+ public static int max(Node root){
+      if(root == null) return 0;
+      
+      int a  = root.val;
+      int b = max(root.left);
+      int c =max(root.right);
+      
+      return Math.max(a, Math.max(b,c));
+ }
+```
+
 
 
 
