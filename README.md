@@ -580,9 +580,23 @@ public class Main {
 - Internal Node - Not Leaf Not Root (which have child and have parent also)
 - Ancester Node - parent -> parent of parent -> parent of parent of parent ->  .....
 - Descendant - Excluding root node all node should be count.
+- Level - no. of row
+- Number of edges - number of line connected to one node to another node. ( Edge = size - 1 )
+- Size: Number of nodes.
+- Height: Based on row and coulmn
 - **Note: One child can't have 2 parent**
 
-## Binary Trees
+### Sub Tree
+- Left sub tree
+- right sub tree
+
+### Important Properties of Tree:
+1. Traversing in a tree done by DFS or BFS algorithum.
+2. It has no loop or no circuit
+3. It has no self loop
+
+```
+### Binary Trees
 - A binary tree is a hierarchical data structure in which each node has at most two children:
 1. Left child
 2. Right child
@@ -591,6 +605,7 @@ public class Main {
 - A value (data)
 - A pointer/reference to its left child
 - A pointer/reference to its right child
+```
 
 
 
