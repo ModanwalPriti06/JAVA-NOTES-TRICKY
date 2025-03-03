@@ -573,7 +573,15 @@ public class Main {
 }
 ```
 
-## Tree
+## Binary Trees
+- A binary tree is a hierarchical data structure in which each node has at most two children:
+1. Left child
+2. Right child
+
+### Each node in a binary tree contains:
+- A value (data)
+- A pointer/reference to its left child
+- A pointer/reference to its right child
 
 
 
