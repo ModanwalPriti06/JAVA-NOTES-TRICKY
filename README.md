@@ -719,6 +719,13 @@ public class Main {
     }
 }
 ```
+## Recursion for find size 
+```
+public static int preorder(Node root){
+      if(root == null) return;
+      preorder(1+ root.left+ root.right);
+    }
+```
 
 
 
