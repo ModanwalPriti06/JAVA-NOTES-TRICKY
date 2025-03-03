@@ -726,6 +726,15 @@ public static int preorder(Node root){
        return 1 + preorder( root.left) + preorder(root.right);
     }
 ```
+## Find the sum of tree node
+```
+ public static void preorder(Node root){
+      if(root == null) return;
+      count += root.val;
+      preorder(root.left);
+      preorder(root.right);
+    }
+```
 
 
 
