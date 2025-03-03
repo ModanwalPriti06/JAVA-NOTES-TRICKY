@@ -764,6 +764,11 @@ public static int height(Node root){
       return 1 + Math.max(height(root.left), height(root.right));
     }
 ```
+---
+# Traversal
+
+## Preorder Traversal - 
+
 
 
 
