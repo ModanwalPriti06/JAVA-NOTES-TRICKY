@@ -746,7 +746,7 @@ public static int preorder(Node root){
 ## Find Node to the max value
 ```
  public static int max(Node root){
-      if(root == null) return 0;
+      if(root == null) return Integer.MIN_VALUE;     // because of -ve value also handling return min_value
       
       int a  = root.val;
       int b = max(root.left);
