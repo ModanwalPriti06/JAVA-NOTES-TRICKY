@@ -357,15 +357,14 @@ function fibonacci(n){
 fibonacci(10);
 ```
 ## find unique element with the help of xor operator
+```
 function findUnique(arr) {
     let result = 0;
     for (let num of arr) result ^= num; // XOR cancels out duplicates
     return result;
 }
-
 console.log(findUnique([1, 2, 3, 2, 1])); // Output: 3
-
-
+```
 # Masai Webinar
 
 - Binary search occurance of any number first and last indix
