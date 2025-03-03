@@ -571,6 +571,11 @@ public class Main {
   }
 }
 ```
+# What is tree data structure:
+- Non-linear Data structure
+- Hierarchical data structure
+- Terminology: Root node, Parent Node, Child Node, Sibling Node
+- Every Node have one or two node.
 
 ## Binary Trees
 - A binary tree is a hierarchical data structure in which each node has at most two children:
