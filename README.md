@@ -723,7 +723,7 @@ public class Main {
 ```
 public static int preorder(Node root){
       if(root == null) return;
-      preorder(1+ root.left+ root.right);
+       return 1 + preorder( root.left) + preorder(root.right);
     }
 ```
 
