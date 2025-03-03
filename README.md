@@ -576,6 +576,7 @@ public class Main {
 - Hierarchical data structure
 - Terminology: Root node, Parent Node, Child Node, Sibling Node
 - Every Node have one or two node.
+- **Note: One child can't have 2 parent**
 
 ## Binary Trees
 - A binary tree is a hierarchical data structure in which each node has at most two children:
