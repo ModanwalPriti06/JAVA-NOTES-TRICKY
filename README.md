@@ -796,6 +796,17 @@ public static void inOrder(Node root){
       System.out.print(root.val+" ");
   }
 ```
+---
+# Print element of nth level
+```
+ public static void nthLevel(Node root, int n){
+      if(root == null) return;    
+      if(n == 1) System.out.print(root.val+" ");   // whatever level you want you can compare like 2nd level, 3rd level etc
+      nthLevel(root.left, n-1);
+      nthLevel(root.right, n-1);
+  }
+```
+# Level Order Traversal (BFS - Breath First Search)
 
 
 
