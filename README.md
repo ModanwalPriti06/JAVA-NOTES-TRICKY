@@ -767,7 +767,37 @@ public static int height(Node root){
 ---
 # Traversal
 
-## Preorder Traversal - 
+## Preorder Traversal - (ROOT -> LEFT -> RIGHT)
+```
+public static void preOrder(Node root){
+      if(root == null) return;    
+      System.out.print(root.val+" ");
+      preOrder(root.left);
+      preOrder(root.right);
+ }
+```
+
+## Inorder Traversal - (LEFT -> ROOT -> RIGHT)
+```
+public static void inOrder(Node root){
+      if(root == null) return;    
+      inOrder(root.left);
+      System.out.print(root.val+" ");
+      inOrder(root.right);
+  }
+```
+
+## postOrder Traversal - (LEFT  -> RIGHT -> ROOT)
+```
+  public static void postOrder(Node root){
+      if(root == null) return;    
+      postOrder(root.left);
+      postOrder(root.right);
+      System.out.print(root.val+" ");
+  }
+```
+
+
 
 
 
