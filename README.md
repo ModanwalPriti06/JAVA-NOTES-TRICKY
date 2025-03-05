@@ -13,6 +13,8 @@
 | **2906** | Multiplication of Matrix | 
 | **867** | Transpose Matrix | 
 | **643 / 1343** | Sliding window | 
+| **543 / 1343** | Binary Tree | 
+
 
 
 
@@ -617,6 +619,7 @@ public class Main {
 - A pointer/reference to its right child
 
 ## Implementation of Binary Tree
+
 (Preorder left to right one to one step - RootLeftRight)
 ```
 import java.util.*;
@@ -801,12 +804,21 @@ public static void inOrder(Node root){
 ```
  public static void nthLevel(Node root, int n){
       if(root == null) return;    
-      if(n == 1) System.out.print(root.val+" ");   // whatever level you want you can compare like 2nd level, 3rd level etc
+      if(n == 1) {
+          System.out.print(root.val+" ");
+          return;                          // No need to check down nodes
+      }  
       nthLevel(root.left, n-1);
       nthLevel(root.right, n-1);
   }
+
+// call function
+nthLevel(root, 1);
+nthLevel(root, 2);
+nthLevel(root, 3);
 ```
 # Level Order Traversal (BFS - Breath First Search)
+- leetcode - 543
 
 
 
