@@ -13,9 +13,7 @@
 | **2906** | Multiplication of Matrix | 
 | **867** | Transpose Matrix | 
 | **643 / 1343** | Sliding window | 
-| **543** | Binary Tree | 
-
-
+| **543/ 257/ 110/ 100** | Binary Tree | 
 
 
 
