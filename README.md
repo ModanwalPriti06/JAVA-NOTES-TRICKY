@@ -13,11 +13,10 @@
 | **2906** | Multiplication of Matrix | 
 | **867** | Transpose Matrix | 
 | **643 / 1343** | Sliding window | 
-| **352 | Normal Logic | 
+| **352** | Normal Logic | 
 | **543/ 257/ 110/ 100/ 236** | Binary Tree | 
+| **226/ 101** | Important Invert Binary Tree / Symmetric Tree | 
 | **236** | Lowest Common Ancestor of a Binary Tree (very Imp) | 
-
-
 
 
 ### Rotate Array Trick
@@ -820,6 +819,8 @@ nthLevel(root, 3);
 ```
 # Level Order Traversal (BFS - Breath First Search)
 - leetcode - 543
+- Best Binary Tree SC - O(log n) (balance binary tree)
+- Worst and Average case SC - O(n) (Screwd Binary Tree)
 
 
 
