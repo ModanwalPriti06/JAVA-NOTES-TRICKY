@@ -589,6 +589,11 @@ public class Main {
 - Height: Based on row and coulmn (consider edges wise mostly)
 - **Note: One child can't have 2 parent**
 
+## Types of tree:
+1. strict Binary tree
+2. Full Binary tree
+3. Completed Binary tree
+
 ### Sub Tree
 - Left sub tree
 - right sub tree
