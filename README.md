@@ -681,7 +681,7 @@ class BST {
 ```
 
 ---
-# traversing on binary tree we use DFS/BFS:
+# Traversing on binary Tree DFS/BFS:
 1. Depth First Search (DFS)
 2. Breadth First Search (BFS)
 
