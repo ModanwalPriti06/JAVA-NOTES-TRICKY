@@ -680,9 +680,28 @@ class BST {
 }
 ```
 
+---
+# traversing on binary tree we use DFS/BFS:
+1. Depth First Search (DFS)
+2. Breadth First Search (BFS)
 
-## Implementation of Binary Tree
+## BFS:
+- BFS (Breadth-First Search) is a fundamental graph/tree traversal algorithm in data structures. It explores nodes level by level starting from a given node (usually the root or a source node in a graph).
+- BFS = Level-order traversal (for trees)
+- It visits all nodes at the current depth before moving to the next level.
+- It uses a Queue (FIFO) data structure.
+- Works for trees and graphs.
 
+
+### 🧠 BFS Algorithm Steps
+1. Initialize a queue and add the starting node.
+2. Mark the node as visited.
+3. While the queue is not empty:
+     - Remove the front node.
+     - Visit all its unvisited adjacent (or child) nodes.
+     - Mark them as visited and add them to the queue.
+
+## Implementation of Binary Tree:
 (Preorder left to right one to one step - RootLeftRight)
 ```
 import java.util.*;
