@@ -683,7 +683,7 @@ class BST {
 ---
 # Traversing on binary Tree DFS/BFS:
 1. Depth First Search (DFS)
-2. Breadth First Search (BFS)
+2. Breadth First Search (BFS) - Horizontally traverse.
 
 ## BFS:
 - BFS (Breadth-First Search) is a fundamental graph/tree traversal algorithm in data structures. It explores nodes level by level starting from a given node (usually the root or a source node in a graph).
