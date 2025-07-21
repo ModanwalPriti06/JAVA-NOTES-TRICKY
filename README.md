@@ -584,7 +584,7 @@ public class Main {
 - Ancester Node - parent -> parent of parent -> parent of parent of parent ->  .....
 - Descendant - Excluding root node all node should be count.
 - Level - no. of row
-- Number of edges - number of line connected to one node to another node. ( Edge = size - 1 )
+- Number of edges (Depth) - number of line connected to one node to another node. ( Edge = size - 1 )
 - Size: Number of nodes.
 - Height: Based on row and coulmn (consider edges wise mostly)
 - **Note: One child can't have 2 parent**
