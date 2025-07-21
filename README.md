@@ -624,6 +624,63 @@ public class Main {
 - A pointer/reference to its left child
 - A pointer/reference to its right child
 
+# Implementation in java for Inserting element in tree
+```
+class Node {
+    int data;
+    Node left, right;
+
+    public Node(int item) {
+        data = item;
+        left = right = null;
+    }
+}
+
+class BST {
+    Node root;
+
+    BST() {
+        root = null;
+    }
+
+    // Insert data in BST
+    Node insert(Node root, int data) {
+        if (root == null) {
+            root = new Node(data);
+            return root;
+        }
+
+        if (data < root.data) {
+            root.left = insert(root.left, data);
+        } else if (data > root.data) {
+            root.right = insert(root.right, data);
+        }
+
+        return root;
+    }
+
+    void inorder(Node root) {
+        if (root != null) {
+            inorder(root.left);
+            System.out.print(root.data + " ");
+            inorder(root.right);
+        }
+    }
+
+    public static void main(String[] args) {
+        BST tree = new BST();
+        int[] values = {50, 30, 20, 40, 70, 60, 80};
+
+        for (int val : values) {
+            tree.root = tree.insert(tree.root, val);
+        }
+
+        tree.inorder(tree.root);  // Output: 20 30 40 50 60 70 80
+    }
+}
+```
+
+
 ## Implementation of Binary Tree
 
 (Preorder left to right one to one step - RootLeftRight)
