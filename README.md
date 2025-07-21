@@ -574,6 +574,7 @@ public class Main {
   }
 }
 ```
+# Tree
 # What is tree data structure:
 - Non-linear Data structure
 - Hierarchical data structure
@@ -905,9 +906,69 @@ nthLevel(root, 3);
 - Worst and Average case SC - O(n) (Screwd Binary Tree)
 
 
+# Graph
+- A graph is a non-linear data structure consisting of nodes (vertices) and edges (connections) that represent relationships between pairs of elements.
 
+| Term                  | Description                                    |
+| --------------------- | ---------------------------------------------- |
+| **Vertex (node)**     | A fundamental unit (e.g., A, B, C)             |
+| **Edge**              | A connection between two vertices              |
+| **Adjacent vertices** | Two vertices connected by an edge              |
+| **Degree**            | Number of edges connected to a vertex          |
+| **Path**              | Sequence of vertices connected by edges        |
+| **Cycle**             | A path that starts and ends at the same vertex |
 
+## Types of Graph
 
+| Type                         | Description                                                                |
+| ---------------------------- | -------------------------------------------------------------------------- |
+| **Directed Graph (Digraph)** | Edges have a direction (A → B)                                             |
+| **Undirected Graph**         | Edges do not have direction (A — B)                                        |
+| **Weighted Graph**           | Each edge has a weight/cost                                                |
+| **Unweighted Graph**         | All edges are equal                                                        |
+| **Cyclic**                   | Contains at least one cycle                                                |
+| **Acyclic**                  | Contains no cycles                                                         |
+| **Connected**                | Every vertex is reachable                                                  |
+| **Disconnected**             | Not all vertices are reachable                                             |
+| **Tree**                     | A special case of a graph (connected & acyclic with N nodes and N-1 edges) |
+
+## 🔹 Graph Representations
+
+1. Adjacency List (most common)
+```
+{
+  A: [B, C],
+  B: [A, D],
+  C: [A],
+  D: [B]
+}
+```
+2. Adjacency Matrix
+```
+    A B C D
+A [ 0 1 1 0 ]
+B [ 1 0 0 1 ]
+C [ 1 0 0 0 ]
+D [ 0 1 0 0 ]
+```
+
+## Use Cases
+- Google Maps (routing)
+- Social Networks (friend connections)
+- Web Crawlers (links between pages)
+- Network Packet Routing
+- Recommendation Systems
+- Project Scheduling (with dependencies)
+
+## 🔹 Graph Operations
+1. Add vertex
+2. Add edge
+3. Remove vertex/edge
+4. Search (DFS, BFS)
+5. Shortest path (Dijkstra’s, Floyd-Warshall)
+6. Cycle detection
+7. Topological sort (for DAGs)
+8. Minimum Spanning Tree (Kruskal’s, Prim’s)
 
 
 
